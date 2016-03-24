@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  ul
+    each tea in teas
+      li
+        ul.tea-Time
+          li= tea.name
+          li= tea.flavor
+          li= tea.in_stock
